@@ -1,0 +1,15 @@
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #434343;
+    @import "../partials/navbar";
+    }
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    @import "../partials/startpage/main";
+}
