@@ -1,0 +1,7 @@
+//Here we declare all the styles that may affect all
+//of the elements of its kind.
+
+h1, h2, h3 {
+    color: $mainColor;
+    font-family: $titlesFont;
+}

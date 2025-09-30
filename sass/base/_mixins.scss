@@ -1,0 +1,10 @@
+//Here we declare reusable functions (code blocks that we can use indefinetly), also called mixins,
+//that will be used in the project.
+//these code blocks are used, for example, for repetitive gradients, shadows, and centered elements.
+//These code bloks don't have any styles, they're just snippets i guess. Not like *components*
+
+@mixin element-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
