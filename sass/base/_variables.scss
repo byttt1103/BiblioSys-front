@@ -5,11 +5,38 @@
 $mainColor: #3366cc;
 $textColor: black;
 $captionColor: #434343;
+$linksColor : #004884;
 
 //background colors
 $headerColor: #F5F5F5;
-$enphasisSectionColor: #C3DDF9;
+$enphasisSectionColor: #C3DDF9 ;
+
+//"hover" colors
+$hoverableColor: #052742;
 
 //typography
 $titlesFont: 'Nunito Sans', sans-serif;
 $contentFont: 'Verdana', sans-serif;
+
+//webpage width, height
+
+    //entire width, height
+    $webWidth: 100vw;
+    $webHeight: 100vh;
+    //half width, height
+    $webHalfWidth: 50vw;
+    $webHalfHeight: 50vh;
+    //25% width, height
+    $webMinWidth: 25vw;
+    $webMinHeight: 25vh;
+
+//elements width, height
+
+    //everything (only height)
+    $H1: 500px;
+    $H2: 300px;
+    $H3: 200px;
+    $H5: 100px;
+    $H6: 50px;
+
+

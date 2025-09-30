@@ -1,7 +1,17 @@
 //Here we declare all the styles that may affect all
 //of the elements of its kind.
+@use "variables";
 
 h1, h2, h3 {
-    color: $mainColor;
-    font-family: $titlesFont;
+    color: variables.$mainColor;
+    font-family: variables.$titlesFont;
 }
+
+p {
+    color: variables.$textColor;
+    font-family: variables.$contentFont;
+}
+
+// #libraryLogo{
+//     height: 10000000000cm JKDSDS
+// }

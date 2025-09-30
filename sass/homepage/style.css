@@ -1,22 +1,40 @@
+h1, h2, h3 {
+  color: #3366cc;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+p {
+  color: black;
+  font-family: "Verdana", sans-serif;
+}
+
 body {
+  background-color: white;
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
   display: flex;
   flex-direction: column;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  color: #434343;
 }
 body header {
   width: 100vw;
   box-sizing: border-box;
   position: fixed;
+  font-family: "Nunito Sans", sans-serif;
 }
 body header #title {
   background-color: #3366cc;
   width: 100vw;
   height: 50px;
+  display: flex;
+  padding-left: 10vw;
+  align-items: center;
 }
 body header nav {
-  background-color: #ffffff;
+  background-color: #F5F5F5;
   width: 100%;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -42,6 +60,12 @@ body header nav #libraryLinks li {
 }
 body header nav #libraryLinks li a {
   color: #434343;
+  text-decoration: none;
+}
+body header nav #libraryLinks li a:hover {
+  -webkit-text-decoration: underline #434343;
+          text-decoration: underline #434343;
+  text-underline-offset: 4px;
 }
 body header nav #profilePlace {
   display: flex;
@@ -51,10 +75,10 @@ body header nav #profilePlace {
 body header nav #profilePlace #loginLink {
   padding-top: 5px;
 }
-body header nav #profilePlace #signBtn {
-  background-color: #36c;
+body header nav #profilePlace button {
+  background-color: #3366cc;
   color: white;
-  transition: 0.3 ease;
+  transition: background-color 0.3s ease;
   border-radius: 50px;
   padding-top: 7px;
   padding-bottom: 7px;
@@ -62,22 +86,96 @@ body header nav #profilePlace #signBtn {
   padding-right: 15px;
   border: none;
 }
-body header nav #profilePlace #signBtn:hover {
-  transition: 0.3s ease;
+body header nav #profilePlace button:hover {
   background-color: #052742;
 }
 body header nav #profilePlace #loginLink {
   font-size: 12px;
   color: #004884;
 }
-
-main {
-  display: flex;
-  flex-direction: column;
-}
-main #welcome {
+body main section {
   height: 100vh;
+}
+body main #welcome {
+  background-image: url("../assets/photo-1588580000645-4562a6d2c839.avif");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body main #welcome button {
+  background-color: #3366cc;
+  color: white;
+  transition: background-color 0.3s ease;
+  border-radius: 50px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+}
+body main #welcome button:hover {
+  background-color: #052742;
+}
+body main #welcome div {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(195, 221, 249, 0.8);
+}
+body main #newsShow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+body main #newsShow button {
+  background-color: #3366cc;
+  color: white;
+  transition: background-color 0.3s ease;
+  border-radius: 50px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+}
+body main #newsShow button:hover {
+  background-color: #052742;
+}
+body main #libraryStats {
+  display: flex;
+  justify-content: center;
+}
+body main #libraryStats div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+body main #invitation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #C3DDF9;
+}
+body main #invitation button {
+  background-color: #3366cc;
+  color: white;
+  transition: background-color 0.3s ease;
+  border-radius: 50px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+}
+body main #invitation button:hover {
+  background-color: #052742;
 }/*# sourceMappingURL=style.css.map */

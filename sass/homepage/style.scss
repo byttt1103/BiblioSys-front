@@ -1,15 +1,61 @@
+@use "../base/global";
+@use "../base/reset";
+@use "../base/mixins";
+@use "../base/variables";
+@use "../components/navbar";
+@use "../components/button";
+
 body {
-    margin: 0;
     display: flex;
     flex-direction: column;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: #434343;
-    @import "../partials/navbar";
+    @include navbar.navbar;
+
+    main {
+        section {
+            height: variables.$webHeight - 135px;
+        }
+
+        #welcome {
+            @include button.button;
+            background-image: url("../assets/photo-1588580000645-4562a6d2c839.avif");
+            @include mixins.background-image;
+
+            div {
+                @include mixins.element-center;
+                height: 100%;
+                width: 100%;
+                background-color: rgba(variables.$enphasisSectionColor, 0.8);
+            }
+
+        }
+
+        #newsShow {
+            @include mixins.element-center;
+            justify-content: space-between;
+            @include button.button;
+        }
+        #libraryStats{
+            display: flex;
+            justify-content: center;
+            div{
+                @include mixins.element-center;
+                flex-direction: row;
+                justify-content: space-around
+            }
+
+        }
+        #invitation{
+            @include mixins.element-center;
+            background-color: variables.$enphasisSectionColor;
+            @include button.button;
+        }
     }
-
-
-main {
-    display: flex;
-    flex-direction: column;
-    @import "../partials/startpage/main";
 }
+
+//this is my kingdom cum
+//this is my kingdom cum// this script is crazy
+// crazy? i was crazy once
+// they locked me in a room
+// a rubber room
+// arh
+//ahoy
