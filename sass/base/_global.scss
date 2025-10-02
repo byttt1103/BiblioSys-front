@@ -2,16 +2,35 @@
 //of the elements of its kind.
 @use "variables";
 
-h1, h2, h3 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     color: variables.$mainColor;
     font-family: variables.$titlesFont;
 }
+
 
 p {
     color: variables.$textColor;
     font-family: variables.$contentFont;
 }
 
-// #libraryLogo{
-//     height: 10000000000cm JKDSDS
-// }
+.section {
+    box-sizing: border-box;
+    padding: 15px;
+}
+
+a {
+    color: variables.$captionColor;
+    text-decoration: none;
+}
+
+a:hover {
+    color: variables.$linkColor;
+    text-decoration: underline variables.$linkColor;
+    text-underline-offset: 4px;
+    cursor: pointer;
+}

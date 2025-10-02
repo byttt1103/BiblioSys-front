@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../sass/homepage/style.css">
     <title>Bibliosys - Inicio</title>
-
+    <script src="../../script/script.js" defer></script>
 </head>
 
 <body>
@@ -25,7 +25,7 @@
                 <li><a href="#">Catálogo</a></li>
                 <li><a href="#">Noticias</a></li>
                 <li><a href="#">Acerca de la biblioteca</a></li>
-            </ul>       
+            </ul>
             <div id="profilePlace">
                 <button id="signBtn" onclick="location.href='https://www.google.com'">¡Registrese gratis!</button>
                 <a id="loginLink">o Inicie sesión</a>
@@ -33,37 +33,40 @@
         </nav>
     </header>
     <main>
-        <section id="welcome">
+        <div class="section" id="welcome">
             <div>
-            <h1>Bienvenido al sistema BiblioSys de la biblioteca X</h1>
-            <p>¡Descubra todo lo que tiene la biblioteca para ofrecer!<br>
-                Acceda a miles de títulos, pídalos prestados, agréguelos a sus favoritos y entérese de los eventos que
-                tendrá la biblioteca. </p>
-            <!-- Aquí iría la barra de bśuqueda -->
-            <a href=""><button>Saber más</button></a>
+                <h1>Bienvenido al sistema BiblioSys de la biblioteca X</h1>
+                <p>¡Descubra todo lo que tiene la biblioteca para ofrecer!<br>
+                    Acceda a miles de títulos, pídalos prestados, agréguelos a sus favoritos y entérese de los eventos
+                    que
+                    tendrá la biblioteca. </p>
+                <!-- Aquí iría la barra de bśuqueda -->
+                <a href=""><button>Saber más</button></a>
             </div>
-        </section>
-        <section id="newsShow">
-            <h3>Novedades en la biblioteca</h3>
+        </div>
+        <div class="section" id="newsShow">
+            <h2>Novedades en la biblioteca</h2>
             <!-- Carrusel con algunas novedades en la biblioteca -->
             <a href=""><button>Más noticias &gt; </button></a>
-        </section>
-        <section id="libraryStats"> 
-            <h2>Estadísticas de la Biblioteca</h2>
+        </div>
+        <div class="section" id="libraryStats">
+            <h1>Estadísticas de la Biblioteca</h1>
             <div>
-                <div class="statBox">
-                    <p>Libros disponibles</p>
+                <div class="elementBox">
+                    <h3>Libros disponibles</h3>
+                    <p>5000</p>
                 </div>
-                <div class="statBox">
-                    <p>Usuarios usando la biblioteca</p>
+                <div class="elementBox">
+                    <h3>Usuarios usando la biblioteca</h3>
+                    <p>1000</p>
                 </div>
             </div>
-        </section>
-        <section id="invitation">
+        </div>
+        <div class="section" id="invitation">
             <h1>¡Únase a nuestra comunidad!</h1>
             <p>¿Preparado para una nueva experiencia usando la biblioteca?</p>
             <a href=""><button class="registerBttn">Registrese aquí</button></a>
-        </section>
+        </div>
     </main>
 </body>
 
