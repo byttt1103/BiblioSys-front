@@ -6,11 +6,12 @@
         width: variables.$webWidth;
         box-sizing: border-box;
         position: fixed;
+        z-index: 2;
         font-family: variables.$titlesFont;
         #title {
             background-color: #3366cc;
             width: variables.$webWidth;
-            height: variables.$H6;
+            height: variables.$H5;
             display: flex;
             padding-left:10vw;
             align-items: center;
@@ -19,17 +20,17 @@
         nav {
             background-color: variables.$headerColor;
             width: 100%;
-            padding-top: 15px;
-            padding-bottom: 15px;
+            padding-top: 8px;
+            padding-bottom: 8px;
             box-sizing: border-box;
             display: flex;
             flex-direction: row;
             align-items: center;
-            justify-content: space-around;
+            justify-content: space-evenly;
 
             #libraryStart {
-                height: variables.$H6;
-                width: variables.$H6;
+                height: variables.$H5;
+                width: variables.$H5;
                 background-color: pink;
             }
 

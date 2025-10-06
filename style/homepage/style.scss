@@ -1,0 +1,70 @@
+@use "../../sass/base/global";
+@use "../../sass/base/reset";
+@use "../../sass/base/mixins";
+@use "../../sass/base/variables";
+@use "../../sass/components/navbar";
+@use "../../sass/components/button";
+@use "../../sass/components/elementBox";
+
+body {
+    @include mixins.elements-flex(column, none, none);
+    @include navbar.navbar;
+
+    main {
+        #welcome {
+            @include button.button;
+            background-image: url("../assets/photo-1588580000645-4562a6d2c839.avif");
+            background-color: variables.$emphasisSectionColor;
+            background-blend-mode: screen;
+            @include mixins.background-image;
+
+            div {
+                @include mixins.elements-flex(column, center, center);
+                height: 100%;
+                width: 100%;
+            }
+
+        }
+
+        #newsShow {
+            @include mixins.elements-flex(column, center, center);
+            justify-content: space-between;
+            @include button.button;
+        }
+
+        #libraryStats {
+            @include mixins.elements-flex(column, space-evenly, center);
+
+            div {
+                @include mixins.grid(2, 20px, 20px);
+                @include elementBox.elementBox(center);
+
+                .elementBox {
+                    h1 {
+                        font-size: xxx-large;
+                        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                        color: variables.$captionColor;
+                        font-weight: bold;
+                    }
+
+                    h1:hover {
+                        color: variables.$linkColor;
+                        text-shadow: 0 0 20px rgba(variables.$linkColor, 0.8);
+                        letter-spacing: 1px;
+                        transform: scale(1.25);
+                        font-weight: bolder;
+                        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+                    }
+                }
+
+            }
+
+        }
+
+        #invitation {
+            @include mixins.elements-flex(column, center, center);
+            background-color: variables.$emphasisSectionColor;
+            @include button.button;
+        }
+    }
+}

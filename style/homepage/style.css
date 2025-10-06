@@ -1,0 +1,241 @@
+* {
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #3366cc;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+p {
+  color: black;
+  font-family: "Verdana", sans-serif;
+}
+
+figcaption, caption {
+  font-size: x-small;
+  color: #434343;
+  font-family: "Verdana", sans-serif;
+}
+
+.section {
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+a {
+  color: #434343;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #0047AB;
+  -webkit-text-decoration: underline #0047AB;
+          text-decoration: underline #0047AB;
+  text-underline-offset: 4px;
+  cursor: pointer;
+}
+
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: none;
+  align-items: none;
+}
+body header {
+  width: 100vw;
+  box-sizing: border-box;
+  position: fixed;
+  z-index: 2;
+  font-family: "Nunito Sans", sans-serif;
+}
+body header #title {
+  background-color: #3366cc;
+  width: 100vw;
+  height: 50px;
+  display: flex;
+  padding-left: 10vw;
+  align-items: center;
+}
+body header nav {
+  background-color: #F5F5F5;
+  width: 100%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+body header nav #libraryStart {
+  height: 50px;
+  width: 50px;
+  background-color: pink;
+}
+body header nav #libraryLinks {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+body header nav #libraryLinks li {
+  padding-right: 5px;
+  padding-left: 5px;
+}
+body header nav #profilePlace {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body header nav #profilePlace #loginLink {
+  padding-top: 5px;
+}
+body header nav #profilePlace button {
+  background-color: #3366cc;
+  color: white;
+  transition: background-color 0.3s ease;
+  border-radius: 50px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+}
+body header nav #profilePlace button:hover {
+  background-color: #052742;
+}
+body header nav #profilePlace #loginLink {
+  font-size: 12px;
+  color: #0047AB;
+}
+body main #welcome {
+  background-image: url("../assets/photo-1588580000645-4562a6d2c839.avif");
+  background-color: #C3DDF9;
+  background-blend-mode: screen;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+body main #welcome button {
+  background-color: #3366cc;
+  color: white;
+  transition: background-color 0.3s ease;
+  border-radius: 50px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+}
+body main #welcome button:hover {
+  background-color: #052742;
+}
+body main #welcome div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+body main #newsShow {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+}
+body main #newsShow button {
+  background-color: #3366cc;
+  color: white;
+  transition: background-color 0.3s ease;
+  border-radius: 50px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+}
+body main #newsShow button:hover {
+  background-color: #052742;
+}
+body main #libraryStats {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body main #libraryStats div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: 1fr;
+  grid-auto-flow: row;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+body main #libraryStats div .elementBox {
+  box-sizing: border-box;
+  padding: 15px;
+  border: 1px solid gray;
+  border-radius: 7px;
+  transition: 0.6s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+body main #libraryStats div .elementBox p {
+  font-size: small;
+}
+body main #libraryStats div .elementBox:hover {
+  transition: 0.6s ease;
+  box-shadow: 0px 0px 10px 0px rgba(128, 128, 128, 0.701);
+  transform: scale(1.025);
+}
+body main #libraryStats div .elementBox h1 {
+  font-size: xxx-large;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  color: #434343;
+  font-weight: bold;
+}
+body main #libraryStats div .elementBox h1:hover {
+  color: #0047AB;
+  text-shadow: 0 0 20px rgba(0, 71, 171, 0.8);
+  letter-spacing: 1px;
+  transform: scale(1.25);
+  font-weight: bolder;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+body main #invitation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #C3DDF9;
+}
+body main #invitation button {
+  background-color: #3366cc;
+  color: white;
+  transition: background-color 0.3s ease;
+  border-radius: 50px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border: none;
+}
+body main #invitation button:hover {
+  background-color: #052742;
+}/*# sourceMappingURL=style.css.map */

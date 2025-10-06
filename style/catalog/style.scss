@@ -1,0 +1,54 @@
+@use "../../sass/base/global";
+@use "../../sass/base/mixins";
+@use "../../sass/base/reset";
+@use "../../sass/base/variables";
+@use "../../sass/components/button";
+@use "../../sass/components/navbar";
+@use "../../sass/components/elementBox";
+
+body {
+    @include mixins.elements-flex(column, none, none);
+    @include navbar.navbar;
+
+    main {
+        #title {
+            height: variables.$H4;
+            @include mixins.elements-flex(row, center, center)
+        }
+
+        #content {
+            @include mixins.elements-flex(column, flex-start, center);
+            padding-bottom: 20vh;
+
+            #catalog {
+                width: 87vw;
+                @include mixins.grid(3, 20px, 20px);
+                @include elementBox.elementBox;
+
+                .elementBox {
+                    @include mixins.grid(2, 15px, 0px);
+
+                    .info {
+                        @include button.button
+                    }
+
+                    figure {
+                        margin: 0px;
+
+                        img {
+                            height: variables.$H1 - 50px;
+                            width: variables.$H3 + 30px;
+                            object-fit: cover;
+                        }
+
+                        figcaption {
+
+                            color: variables.$captionColor
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}

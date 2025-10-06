@@ -1,6 +1,10 @@
 //Here we declare all the styles that may affect all
 //of the elements of its kind.
+
 @use "variables";
+*{
+    padding: 0;
+}
 
 h1,
 h2,
@@ -15,6 +19,11 @@ h6 {
 
 p {
     color: variables.$textColor;
+    font-family: variables.$contentFont;
+}
+figcaption, caption{
+    font-size: x-small;
+    color: variables.$captionColor;
     font-family: variables.$contentFont;
 }
 
