@@ -15,6 +15,7 @@ h6 {
 p {
   color: black;
   font-family: "Verdana", sans-serif;
+  font-size: 14px;
 }
 
 figcaption, caption {
@@ -112,6 +113,7 @@ body header nav #profilePlace button {
   padding-left: 15px;
   padding-right: 15px;
   border: none;
+  cursor: pointer;
 }
 body header nav #profilePlace button:hover {
   background-color: #052742;
@@ -119,6 +121,16 @@ body header nav #profilePlace button:hover {
 body header nav #profilePlace #loginLink {
   font-size: 12px;
   color: #0047AB;
+}
+body header nav #profilePlace #avatar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cccccc;
+  width: 42px;
+  height: 40px;
+  border-radius: 100px;
+  cursor: pointer;
 }
 body main {
   display: flex;
@@ -137,7 +149,7 @@ body main #content {
 }
 body main #content .elementBox {
   box-sizing: border-box;
-  padding: 15px;
+  padding: 20px;
   border: 1px solid gray;
   border-radius: 7px;
   transition: 0.6s ease;
@@ -168,6 +180,7 @@ body main #content .elementBox button {
   padding-left: 15px;
   padding-right: 15px;
   border: none;
+  cursor: pointer;
 }
 body main #content .elementBox button:hover {
   background-color: #052742;

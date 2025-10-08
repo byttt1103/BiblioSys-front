@@ -60,6 +60,17 @@
                     color: variables.$linkColor;
 
                 }
+
+                #avatar {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #cccccc;
+                    width: 42px;
+                    height: 40px;
+                    border-radius: 100px;
+                    cursor: pointer
+                }
             }
 
         }

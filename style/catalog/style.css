@@ -112,6 +112,7 @@ body header nav #profilePlace button {
   padding-left: 15px;
   padding-right: 15px;
   border: none;
+  cursor: pointer;
 }
 body header nav #profilePlace button:hover {
   background-color: #052742;
@@ -138,7 +139,7 @@ body main #content #catalog {
   width: 87vw;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 1fr;
+  grid-template-rows: repeat(auto, 1fr);
   grid-auto-flow: row;
   grid-column-gap: 20px;
   grid-row-gap: 20px;
@@ -147,12 +148,12 @@ body main #content #catalog .elementBox {
   box-sizing: border-box;
   padding: 15px;
   border: 1px solid gray;
-  border-radius: 5px;
+  border-radius: 7px;
   transition: 0.6s ease;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
-  align-items: left;
+  align-items: center;
 }
 body main #content #catalog .elementBox p {
   font-size: small;
@@ -165,7 +166,7 @@ body main #content #catalog .elementBox:hover {
 body main #content #catalog .elementBox {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-auto-rows: 1fr;
+  grid-template-rows: repeat(auto, 1fr);
   grid-auto-flow: row;
   grid-column-gap: 15px;
   grid-row-gap: 0px;
@@ -180,6 +181,7 @@ body main #content #catalog .elementBox .info button {
   padding-left: 15px;
   padding-right: 15px;
   border: none;
+  cursor: pointer;
 }
 body main #content #catalog .elementBox .info button:hover {
   background-color: #052742;

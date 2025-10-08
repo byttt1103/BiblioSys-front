@@ -1,0 +1,154 @@
+@use "../../sass/base/variables";
+@use "../../sass/base/reset";
+@use "../../sass/base/global";
+@use "../../sass/base/mixins";
+@use "../../sass/components/button";
+@use "../../sass/components/navbar";
+
+body {
+    @include mixins.elements-flex(column, none, none);
+    @include navbar.navbar;
+
+    main {
+        box-sizing: border-box;
+        background-color: variables.$otherSectionColor;
+
+        .section {
+            @include mixins.elements-flex(column, center, center);
+
+            #formContainer {
+                background-color: white;
+                border: 2px solid #cccccc;
+                border-radius: 10px;
+                box-sizing: border-box;
+                padding: 30px 30px 10px 30px;
+                width: 400px;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+                #signupText {
+                    font-size: 0.7rem;
+                    margin-top: 3px;
+                    color: variables.$captionColor;
+                }
+
+                form {
+                    @include button.button;
+                    @include mixins.elements-flex(column, none, center);
+                    width: 100%;
+                    height: 100%;
+
+
+                    h3 {
+                        font-size: 1.7rem;
+                        margin: 0 auto 20px auto;
+                        font-weight: bolder;
+                        user-select: none;
+                    }
+
+                    input[type="text"],
+                    input[type="password"] {
+                        margin-bottom: 10px;
+                        background-color: #eeeeee;
+                        height: 2.1rem;
+                        width: 100%;
+                        border: 1px solid #cccccc;
+                        outline: none;
+                        border-radius: 10px;
+                        box-sizing: border-box;
+                        padding: 10px;
+                        transform: scale(1);
+                        transition: all 200ms ease-in-out;
+
+                        &:hover {
+                            border: 1px solid variables.$mainColor;
+                        }
+                    }
+
+                    .passwordContainer {
+                        @include mixins.elements-flex(row, none, none);
+                        width: 100%;
+
+
+                        #togglePasswordState {
+                            @include mixins.elements-flex(row, center, center);
+                            border: 1px solid #cccccc;
+                            background-color: #eeeeee;
+                            border-radius: 10px;
+                            height: 2.1rem;
+                            width: 2.3em;
+                            margin-left: 5px;
+                            cursor: pointer;
+                            transition: all 200ms ease-in-out;
+
+                            &:hover {
+                                border: 1px solid variables.$mainColor;
+                            }
+
+                            &.hidden {
+                                #passwordSeeIcon {
+                                    display: none
+                                }
+
+                                #passwordHideIcon {
+                                    display: block
+                                }
+                            }
+
+                            &.showing {
+                                #passwordSeeIcon {
+                                    display: block
+                                }
+
+                                #passwordHideIcon {
+                                    display: none
+                                }
+                            }
+                        }
+
+                        #togglePasswordState2 {
+                            @include mixins.elements-flex(row, center, center);
+                            border: 1px solid #cccccc;
+                            background-color: #eeeeee;
+                            border-radius: 10px;
+                            height: 2.1rem;
+                            width: 2.3em;
+                            margin-left: 5px;
+                            cursor: pointer;
+                            transition: all 200ms ease-in-out;
+
+                            &:hover {
+                                border: 1px solid variables.$mainColor;
+                            }
+
+                            &.hidden {
+                                #passwordSeeIcon2 {
+                                    display: none
+                                }
+
+                                #passwordHideIcon2 {
+                                    display: block
+                                }
+                            }
+
+                            &.showing {
+                                #passwordSeeIcon2 {
+                                    display: block
+                                }
+
+                                #passwordHideIcon2 {
+                                    display: none
+                                }
+                            }
+                        }
+                    }
+
+                    button {
+                        margin-top: 10px;
+                        width: 100%;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

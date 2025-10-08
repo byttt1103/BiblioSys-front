@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesion</title>
+    <link rel="stylesheet" href="../../../style/signin/style.css">
+    <script src="../script/login.js" defer></script>
+    <script src="../../script/height.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div id="title">
+            <img src="" alt="">
+            empresa/gobierno
+        </div>
+        <nav>
+            <div id="libraryStart">
+                <img src="" alt="">
+                biblio <br>teca
+            </div>
+            <ul id="libraryLinks">
+                <li><a href="../../notSigned/inicio/index.html">Inicio</a></li>
+                <li><a href="../../notSigned/catalogo/index.html">Catálogo</a></li>
+                <li><a href="../../notSigned/noticias/index.html">Noticias</a></li>
+                <li><a href="../../notSigned/acerca/index.html">Acerca de la biblioteca</a></li>
+            </ul>
+            <div id="profilePlace">
+                <button id="signBtn" onclick="location.href='../../user/signup/index.html'">¡Registrese gratis!</button>
+                <a href="../../user/login/index.html" id="loginLink">o Inicie sesión</a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="section">
+            <div id="formContainer">
+                <form name="login" method="post">
+                    <h3>Inicie Sesión</h3>
+                    <input type="text" id="username" placeholder="Introduzca su nombre de usuario">
+                    <div class="passwordContainer">
+                        <input type="password" id="password" placeholder="Introduzca su contraseña">
+                        <div class="hidden" id="togglePasswordState">
+                            <svg id="passwordSeeIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-eye">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M10 12a2 2 0 1 0 4 0a2 2 0 0 0 -4 0" />
+                                <path
+                                    d="M21 12c-2.4 4 -5.4 6 -9 6c-3.6 0 -6.6 -2 -9 -6c2.4 -4 5.4 -6 9 -6c3.6 0 6.6 2 9 6" />
+                            </svg>
+                            <svg id="passwordHideIcon" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-eye-closed">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M21 9c-2.4 2.667 -5.4 4 -9 4c-3.6 0 -6.6 -1.333 -9 -4" />
+                                <path d="M3 15l2.5 -3.8" />
+                                <path d="M21 14.976l-2.492 -3.776" />
+                                <path d="M9 17l.5 -4" />
+                                <path d="M15 17l-.5 -4" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <button type="submit">Iniciar sesion</button>
+                    <p id="signupText">No tienes cuenta? <a href="../../user/signup/index.html">¡Crea una!</a></p>
+                </form>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

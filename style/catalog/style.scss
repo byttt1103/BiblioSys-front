@@ -22,11 +22,11 @@ body {
 
             #catalog {
                 width: 87vw;
-                @include mixins.grid(3, 20px, 20px);
-                @include elementBox.elementBox;
+                @include mixins.grid(3, auto, 20px, 20px);
+                @include elementBox.elementBox(center);
 
                 .elementBox {
-                    @include mixins.grid(2, 15px, 0px);
+                    @include mixins.grid(2, auto, 15px, 0px);
 
                     .info {
                         @include button.button
