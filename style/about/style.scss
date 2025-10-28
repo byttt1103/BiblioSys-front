@@ -12,15 +12,12 @@ body {
 
     main {
 
-
         img {
-            height: variables.$H2;
             box-shadow: 0px 0px 3px 1px variables.$captionColor;
         }
 
         .section {
-            box-sizing: border-box; // Para retener el padding dentro de la caja (que no se salga)
-            padding: 0 80px; // o padding vertical y 60 horizontal
+            box-sizing: border-box; 
         }
 
         #aboutResume {
@@ -30,14 +27,12 @@ body {
             text-align: center;
 
             div {
-                text-align: center;
                 height: 100%;
                 @include mixins.elements-flex(column, space-evenly, center);
 
                 h1 {
+                    margin: 0;
                     @include mixins.elements-flex(column, center, center);
-                    grid-column: 1 /span 3;
-                    margin-top: 0;
                     height: 40%;
                     width: 100%;
                     background-image: url("../assets/photo-1588580000645-4562a6d2c839.avif");
@@ -47,42 +42,57 @@ body {
 
                 .sectionContent {
                     @include mixins.grid(4, 20px, 0px);
-
-                    box-sizing: border-box; // Para retener el padding dentro de la caja (que no se salga)
-                    padding: 0 80px; // o padding vertical y 60 horizontal
+                    box-sizing: border-box;
+                    padding: 0 15px;
+                    width: 77%;
 
                     p {
                         text-align: right;
                         grid-column: 1 / span 2;
                     }
+
+                    #img1 {
+                        grid-column: 3;
+                        height: variables.$H2;
+                    }
+
+                    #img2 {
+                        grid-column: 4;
+                        height: variables.$H2;
+                    }
                 }
             }
         }
-        // #aboutContent es un .section, no puede buscar un .section dentro de este, no existe
+
         #aboutContent {
-            @include mixins.grid(10, 20px, 0px);
+            padding-left: 30px;
+            @include mixins.grid(10, 30px, 0px);
 
             div {
                 grid-column: 4 / span 10;
+                align-self: center;
+                grid-row: 1 / span 2;
             }
 
             #img1 {
                 grid-column: 1;
                 grid-row: 1 / span 2;
+                height: variables.$H1;
             }
 
             #img2 {
                 align-self: center;
                 grid-column: 2;
                 grid-row: 1 / span 2;
+                height: variables.$H1;
             }
 
             #img3 {
                 align-self: end;
                 grid-column: 3;
                 grid-row: 1 / span 2;
+                height: variables.$H1;
             }
         }
-
     }
 }

@@ -1,6 +1,7 @@
 @use "../base/variables";
 @mixin button {
     button {
+        margin-top: 10px;
         background-color: variables.$mainColor;
         color: white;
         transition: background-color 0.3s ease;

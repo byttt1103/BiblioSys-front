@@ -1,0 +1,65 @@
+@use "../../sass/base/global";
+@use "../../sass/base/reset";
+@use "../../sass/base/mixins";
+@use "../../sass/base/variables";
+@use "../../sass/components/navbar";
+@use "../../sass/components/button";
+
+
+body {
+    @include mixins.elements-flex(column, none, none);
+    @include navbar.navbar;
+
+    main {
+
+        img {
+            height: variables.$H1;
+            box-shadow: 0px 0px 3px 1px variables.$captionColor;
+        }
+
+        .section {
+            box-sizing: border-box; // Para retener el padding dentro de la caja (que no se salga)
+        }
+
+        #newsHeader {
+            background-color: variables.$emphasisSectionColor;
+
+            div {
+                height: 100%;
+                @include mixins.elements-flex(column, space-evenly, center);
+
+                h1 {
+                    @include mixins.elements-flex(column, center, center);
+                    height: 15%;
+                    width: 180%;
+                }
+
+                .sectionContent {
+                    @include mixins.grid(4, 10px, 0px);
+
+                    box-sizing: border-box;
+                    width: 75%;
+                    padding: 0 15px;
+
+                    figure {
+                        grid-column: 1 / span 2;
+                    }
+
+                    p {
+                        text-align: left;
+                        grid-column: 3 / span 4;
+                    }
+                }
+            }
+        }
+
+        .newsContent {
+            @include mixins.grid(6, 30px, 0px);
+            .text{
+                grid-column: 2 / span 4;
+            }
+             
+        }
+
+    }
+}

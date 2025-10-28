@@ -4,14 +4,14 @@
 //These code bloks often don't have any styles, they're just snippets. But they can be ued for some small styling,
 //like animating numbers or text.
 
-@mixin elements-flex($direction,$justify,$align){
+@mixin elements-flex($direction, $justify, $align) {
     display: flex;
     flex-direction: $direction;
     justify-content: $justify;
     align-items: $align;
 }
 
-@mixin background-image{
+@mixin background-image {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -26,7 +26,7 @@
     grid-row-gap: $gapRow;
 }
 
-@mixin animatedText($color, $fontSize, $textShadow, $spacing, $transform){
+@mixin animatedText($color, $fontSize, $textShadow, $spacing, $transform) {
     color: $color;
     font-size: $fontSize;
     text-shadow: $textShadow;
@@ -34,4 +34,20 @@
     transform: $transform;
 }
 
+@mixin divider {
+    .divider {
+        width: 100%;
+        background-color: #cccccc;
+        height: 1px;
+        margin: 5px 0;
+    }
+}
 
+@mixin dividerShort {
+    .dividerShort {
+        width: 200px;
+        background-color: #cccccc;
+        height: 1px;
+        margin: 3px 0;
+    }
+}

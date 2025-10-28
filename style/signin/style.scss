@@ -4,6 +4,7 @@
 @use "../../sass/base/mixins";
 @use "../../sass/components/button";
 @use "../../sass/components/navbar";
+@use "../../sass/components/input";
 
 body {
     @include mixins.elements-flex(column, none, none);
@@ -22,8 +23,10 @@ body {
                 border-radius: 10px;
                 box-sizing: border-box;
                 padding: 30px 30px 10px 30px;
-                width: 400px;
+                height: 55%;
+                width: 30%;
                 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
 
                 #signupText {
                     font-size: 0.7rem;
@@ -31,13 +34,9 @@ body {
                     color: variables.$captionColor;
                 }
 
+                @include mixins.elements-flex(column, none, center);
+
                 form {
-                    @include button.button;
-                    @include mixins.elements-flex(column, none, center);
-                    width: 100%;
-                    height: 100%;
-
-
                     h3 {
                         font-size: 1.7rem;
                         margin: 0 auto 20px auto;
@@ -46,22 +45,8 @@ body {
                     }
 
                     input[type="text"],
-                    input[type="password"] {
-                        margin-bottom: 10px;
-                        background-color: #eeeeee;
-                        height: 2.1rem;
-                        width: 100%;
-                        border: 1px solid #cccccc;
-                        outline: none;
-                        border-radius: 10px;
-                        box-sizing: border-box;
-                        padding: 10px;
-                        transform: scale(1);
-                        transition: all 200ms ease-in-out;
-
-                        &:hover {
-                            border: 1px solid variables.$mainColor;
-                        }
+                    [type="password"] {
+                        @include input.input;
                     }
 
                     .passwordContainer {
@@ -141,12 +126,14 @@ body {
                             }
                         }
                     }
+                }
 
-                    button {
-                        margin-top: 10px;
-                        width: 100%;
-                        cursor: pointer;
-                    }
+                @include button.button;
+
+                button {
+                    margin-top: 10px;
+                    width: 100%;
+                    cursor: pointer;
                 }
             }
         }

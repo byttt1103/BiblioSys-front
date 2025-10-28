@@ -20,8 +20,15 @@ body {
 
             div {
                 @include mixins.elements-flex(column, center, center);
+                text-align: center;
                 height: 100%;
                 width: 100%;
+                h1{
+                    padding-bottom: 15px;
+                }
+                p{
+                    padding-bottom: 15px;
+                }
             }
 
         }
@@ -65,6 +72,12 @@ body {
             @include mixins.elements-flex(column, center, center);
             background-color: variables.$emphasisSectionColor;
             @include button.button;
+            h1{
+                padding-bottom: 15px;
+            }
+            p{
+                padding-bottom: 15px;
+            }
         }
     }
 }

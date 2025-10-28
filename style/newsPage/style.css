@@ -134,81 +134,57 @@ body header nav #profilePlace #avatar {
   border-radius: 100px;
   cursor: pointer;
 }
-body main #title {
-  height: 100px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+body main img {
+  height: 300px;
+  box-shadow: 0px 0px 3px 1px #434343;
 }
-body main #content {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding-bottom: 20vh;
-}
-body main #content #catalog {
-  width: 87vw;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 1fr;
-  grid-auto-flow: row;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-}
-body main #content #catalog .elementBox {
+body main .section {
   box-sizing: border-box;
-  padding: 20px;
-  border: 1px solid gray;
-  border-radius: 7px;
-  transition: 0.6s ease;
+}
+body main #newsHeader {
+  background-color: #C3DDF9;
+}
+body main #newsHeader div {
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
 }
-body main #content #catalog .elementBox p {
-  font-size: small;
+body main #newsHeader div h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 15%;
+  width: 180%;
 }
-body main #content #catalog .elementBox:hover {
-  transition: 0.6s ease;
-  box-shadow: 0px 0px 10px 0px rgba(128, 128, 128, 0.701);
-  transform: scale(1.025);
-}
-body main #content #catalog .elementBox {
+body main #newsHeader div .sectionContent {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 1fr;
   grid-auto-flow: row;
-  grid-column-gap: 20px;
-  grid-row-gap: 15px;
+  grid-column-gap: 10px;
+  grid-row-gap: 0px;
+  box-sizing: border-box;
+  width: 75%;
+  padding: 0 15px;
 }
-body main #content #catalog .elementBox .info button {
-  margin-top: 10px;
-  background-color: #3366cc;
-  color: white;
-  transition: background-color 0.3s ease;
-  border-radius: 50px;
-  padding-top: 7px;
-  padding-bottom: 7px;
-  padding-left: 15px;
-  padding-right: 15px;
-  border: none;
-  cursor: pointer;
+body main #newsHeader div .sectionContent figure {
+  grid-column: 1/span 2;
 }
-body main #content #catalog .elementBox .info button:hover {
-  background-color: #052742;
+body main #newsHeader div .sectionContent p {
+  text-align: left;
+  grid-column: 3/span 4;
 }
-body main #content #catalog .elementBox figure {
-  margin: 0px;
+body main .newsContent {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-auto-rows: 1fr;
+  grid-auto-flow: row;
+  grid-column-gap: 30px;
+  grid-row-gap: 0px;
 }
-body main #content #catalog .elementBox figure img {
-  height: 250px;
-  width: 180px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-body main #content #catalog .elementBox figure figcaption {
-  color: #434343;
+body main .newsContent .text {
+  grid-column: 2/span 4;
 }/*# sourceMappingURL=style.css.map */

@@ -4,7 +4,6 @@
 @use "../../sass/base/mixins";
 @use "../../sass/components/button";
 @use "../../sass/components/navbar";
-@use "../../sass/components/elementBox";
 
 body {
     @include mixins.elements-flex(column, none, none);
@@ -52,47 +51,22 @@ body {
                     margin-left: 10px;
                     border-radius: 0px 10px 10px 0px;
 
-                    .dividerShort {
-                        width: 200px;
-                        background-color: #cccccc;
-                        height: 1px;
-                        margin: 3px 0;
-                    }
-
-                    #sinopsis {
-                        margin-top: 5px;
-
-                        p {
-                            color: variables.$captionColor;
-                            font-size: .95rem;
-                        }
-
-                        border-left: 2px solid variables.$captionColor;
-
-                        box-sizing: border-box;
-                        padding-left: 10px;
-                    }
-
                     #title {
                         font-size: 2.5rem;
                         margin: 0;
                     }
 
-                    #autor, #editorial {
+                    @include mixins.dividerShort;
+
+                    #autor,
+                    #editorial {
                         font-size: .8rem;
                         margin: 0;
                         color: variables.$captionColor
                     }
 
-                    #sinopsisLabel {
-                        font-family: variables.$titlesFont;
-                        margin-top: 20px;
-                    }
-
-                    #requestBook {
-                        margin-top: 10px;
-                    }
-
+                    @include mixins.divider;
+                    @include button.button
                 }
             }
         }
