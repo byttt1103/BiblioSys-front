@@ -5,6 +5,7 @@
 @use "../../sass/components/navbar";
 @use "../../sass/components/button";
 @use "../../sass/components/elementBox";
+@use"../../sass/components/searchBar";
 
 body {
     @include mixins.elements-flex(column, none, none);
@@ -16,18 +17,23 @@ body {
             background-image: url("../assets/photo-1588580000645-4562a6d2c839.avif");
             background-color: variables.$emphasisSectionColor;
             background-blend-mode: screen;
-            @include mixins.background-image;
 
-            div {
+            #welcomeText {
                 @include mixins.elements-flex(column, center, center);
                 text-align: center;
                 height: 100%;
                 width: 100%;
                 h1{
-                    padding-bottom: 15px;
+                    margin-bottom: 10px;
                 }
                 p{
-                    padding-bottom: 15px;
+                    margin-bottom: 40px;
+                }
+
+                @include searchBar.searchBar;
+
+                button{
+                    margin-top: 20px;
                 }
             }
 
@@ -37,6 +43,7 @@ body {
             @include mixins.elements-flex(column, center, center);
             justify-content: space-between;
             @include button.button;
+            background-color: variables.$otherSectionColor;
         }
 
         #libraryStats {

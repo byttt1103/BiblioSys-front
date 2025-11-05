@@ -1,8 +1,8 @@
 
 # BiblioSys-front
 
-A front-end design for the BiblioSys project.
----
+## A front-end design for the BiblioSys project.
+
 
 Disclaimer: This is just a design draft for the project. Don't expect to work properly.
 
@@ -13,3 +13,7 @@ It allows libraries to manage their material inventory (such as books and physic
 This system not only aims to be a practical library management system, but also a web platform that can promote the library itself, expanding the library's audience and promoting its events and services. This is because many awesome things that offers a library doesn't get as much promotions as deserved, and that's why this system also offers a news/blog section.
 
 This is my very first big project, and I hope it gets developed in good conditions.
+
+
+
+###### Shoutout to [Omi036](https://github.com/Omi036) for helping me with all sorts of things, and for keeping me motivated throughout the project. Thank you, my dearest <3

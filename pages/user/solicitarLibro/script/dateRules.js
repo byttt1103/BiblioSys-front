@@ -62,6 +62,7 @@ function calculateDays(){
     }
 }
 
+//adds a listener for each input
 rentalStartDate.addEventListener("change", updateDeadlineMin)
 rentalStartDate.addEventListener("change", updateMaxDate)
 rentalStartDate.addEventListener("change", calculateDays)

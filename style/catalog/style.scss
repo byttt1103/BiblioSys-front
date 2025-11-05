@@ -4,6 +4,7 @@
 @use "../../sass/base/variables";
 @use "../../sass/components/button";
 @use "../../sass/components/navbar";
+@use "../../sass/components/searchBar";
 @use "../../sass/components/elementBox";
 
 body {
@@ -12,8 +13,9 @@ body {
 
     main {
         #title {
-            height: variables.$H4;
-            @include mixins.elements-flex(row, center, center)
+            height: variables.$H3;
+            @include mixins.elements-flex(column, center, center);
+            @include searchBar.searchBar;
         }
 
         #content {

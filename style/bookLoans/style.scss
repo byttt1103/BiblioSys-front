@@ -66,7 +66,27 @@ body {
                     }
 
                     @include mixins.divider;
-                    @include button.button
+
+                    div {
+                        @include mixins.elements-flex(column, center, center);
+                        height: 75%;
+
+                        #form {
+                            height: 50%;
+                            width: 65%;
+
+                            @include mixins.elements-flex(row, center, center);
+                            flex-wrap: wrap;
+
+                            .inputContainer {
+
+                                width: 50%;
+                                height: 50%;
+                            }
+                        }
+
+                        @include button.button;
+                    }
                 }
             }
         }

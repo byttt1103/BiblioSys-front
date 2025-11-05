@@ -29,6 +29,7 @@ body {
             div {
                 height: 100%;
                 @include mixins.elements-flex(column, space-evenly, center);
+                background-color: variables.$otherSectionColor;
 
                 h1 {
                     margin: 0;

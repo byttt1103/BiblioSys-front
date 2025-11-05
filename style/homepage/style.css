@@ -138,9 +138,6 @@ body main #welcome {
   background-image: url("../assets/photo-1588580000645-4562a6d2c839.avif");
   background-color: #C3DDF9;
   background-blend-mode: screen;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 body main #welcome button {
   margin-top: 10px;
@@ -158,7 +155,7 @@ body main #welcome button {
 body main #welcome button:hover {
   background-color: #052742;
 }
-body main #welcome div {
+body main #welcome #welcomeText {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -167,11 +164,44 @@ body main #welcome div {
   height: 100%;
   width: 100%;
 }
-body main #welcome div h1 {
-  padding-bottom: 15px;
+body main #welcome #welcomeText h1 {
+  margin-bottom: 10px;
 }
-body main #welcome div p {
-  padding-bottom: 15px;
+body main #welcome #welcomeText p {
+  margin-bottom: 40px;
+}
+body main #welcome #welcomeText #searchBar {
+  width: 50vw;
+  height: 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #dadde7;
+  border: 3px solid #3366cc;
+  border-radius: 5px;
+  padding-left: 1px;
+  padding-right: 1px;
+}
+body main #welcome #welcomeText #searchBar input {
+  width: 90%;
+  height: 80%;
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+}
+body main #welcome #welcomeText #searchBar input:focus {
+  outline: none;
+}
+body main #welcome #welcomeText #searchBar #searchIcon {
+  height: 60%;
+  width: auto;
+  cursor: pointer;
+  color: #3366cc;
+}
+body main #welcome #welcomeText button {
+  margin-top: 20px;
 }
 body main #newsShow {
   display: flex;
@@ -179,6 +209,7 @@ body main #newsShow {
   justify-content: center;
   align-items: center;
   justify-content: space-between;
+  background-color: #dadde7;
 }
 body main #newsShow button {
   margin-top: 10px;

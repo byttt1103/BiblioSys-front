@@ -66,27 +66,32 @@
                     <p id="autor">De Lorem Ipsum Sit Amet</p>
                     <div class="dividerShort"></div>
                     <p id="editorial">Editorial Lorem Ipsum</p>
+                    <div class="divider"></div>
                     <div>
-                        <div class="divider"></div>
+                        <div id="form">
+                            <div class="inputContainer">
+                                <p>Fecha de inicio del préstamo:</p>
+                                <input type="date" id="rentalStartDate" name="rentalStartDate" required>
+                            </div>
 
-                        <div class="inputContainer">
-                            <p>Fecha de inicio del préstamo:</p>
-                            <input type="date" id="rentalStartDate" name="rentalStartDate" required>
+
+                            <div class="inputContainer">
+                                <p>Fecha de finalización del préstamo</p>
+                                <input type="date" name="rentalDeadline" id="rentalDeadline" required>
+                            </div>
+                            <div class="inputContainer">
+                                <p>Duración del préstamo:</p>
+                                <input type="text" name="rentalDuration" id="rentalDuration" readonly>
+
+                            </div>
+                            <div class="inputContainer">
+                                <p>Digite su número de documento de identidad para continuar</p>
+                                <input type="text" name="serialID" id="serialID">
+                            </div>
+
                         </div>
-
-
-                        <div class="inputContainer">
-                            <p>Fecha de finalización del préstamo</p>
-                            <input type="date" name="rentalDeadline" id="rentalDeadline" required>
-                        </div>
-                        <div class="inputContainer">
-                            <p>Duración del préstamo:</p>
-                            <input type="text" name="rentalDuration" id="rentalDuration" readonly>
-
-                        </div>
-
+                        <button id="requestBookSubmit">Solicitar Libro</button>
                     </div>
-                    <button id="requestBookSubmit">Solicitar Libro</button>
                 </div>
             </div>
         </div>

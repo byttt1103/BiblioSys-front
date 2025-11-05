@@ -152,7 +152,7 @@ body main .section #bookContainer #details {
   flex-direction: column;
   justify-content: none;
   align-items: none;
-  background-color: #e5e5e5;
+  background-color: #dadde7;
   padding: 30px;
   height: 100%;
   box-sizing: border-box;
@@ -191,7 +191,7 @@ body main .section #bookContainer #details .divider {
   margin: 5px 0;
 }
 body main .section #bookContainer #data {
-  background-color: #e5e5e5;
+  background-color: #dadde7;
   box-sizing: border-box;
   width: 80%;
   padding: 19px;
